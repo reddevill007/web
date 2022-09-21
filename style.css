@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    /* background: red; */
+    min-height: 100vh;
+    width: 100%;
+}
+
+.navigation {
+    padding: 0 100px;
+    background: #fff;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .logo {
+    background: #000;
+    color: #fff;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navigation .logo  h1{
+    letter-spacing: 2px;
+    font-size: 39px;
+}
+
+.navigation .logo .dot {
+    color: aqua;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.navigation .links ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+.navigation .links ul li a {
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+}
+
+.navigation .links ul li a.active {
+    position: relative;
+    color: #000;
+}
+
+.navigation .links ul li a.active::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: rgba(0, 255, 255, 0.3);
+    top: 0;
+    left: 0;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(30deg);
+}
+
+/* Hero CSS */
+section.hero {
+    min-height: calc(100vh - 60px);
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.hero .content {
+    width: 50%;
+    height: 100%;
+}
+
+section.hero .image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.hero .image img {
+    width: 90%;
+}
